@@ -1,6 +1,8 @@
 name: Conditional Auto Approve and Label
 
 on:
+  pull_request:
+    types: [opened, reopened, synchronized]
   check_suite:
     types: [completed]
   status:
